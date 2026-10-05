@@ -6,9 +6,9 @@ POST http://127.0.0.1:8000/api/usuario
 Content-Type: application/json
 
 {
-  "name":"juan",
-  "email":"juan@mail.com",
-  "password": "juan12345"
+  "name":"nuevo",
+  "email":"nuevo@mail.com",
+  "password": "nuevo12345"
 }
 
 ### Mostrar usuario

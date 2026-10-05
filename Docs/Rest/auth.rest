@@ -1,0 +1,33 @@
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "maria@mail.com",
+    "password": "maria12345"
+}
+
+### Registro de usuario
+POST http://127.0.0.1:8000/api/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Maria",
+    "email":"maria@mail.com",
+    "password": "maria12345",
+    "cpassword": "maria12345"
+    
+}
+
+### Perfil
+GET http://127.0.0.1:8000/api/auth/profile
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 3|j8QX43TTpo80cjKpiBd9KTm0JgZGpDYaecS8XewI75c8ca03
+
+### Logout 
+POST http://127.0.0.1:8000/api/auth/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 3|j8QX43TTpo80cjKpiBd9KTm0JgZGpDYaecS8XewI75c8ca03
