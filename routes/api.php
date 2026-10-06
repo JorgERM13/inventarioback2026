@@ -11,13 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-//CRUD Usuarios
 
-Route::get("/usuario", [UsuarioController::class, "funListar"]);
-Route::post("/usuario", [UsuarioController::class, "funGuardar"]);
-Route::get("/usuario/{id}", [UsuarioController::class, "funMostrar"]);
-Route::put("/usuario/{id}", [UsuarioController::class, "funModificar"]);
-Route::delete("/usuario/{id}", [UsuarioController::class, "funEliminar"]);
 
 //CRUD Authenticacion
 
@@ -33,4 +27,18 @@ Route::prefix('/auth')->group(function(){
     });
     
 });
+
+
+
+Route::middleware('auth:sanctum')->group(function(){
+
+//CRUD Usuarios
+Route::get("/usuario", [UsuarioController::class, "funListar"]);
+Route::post("/usuario", [UsuarioController::class, "funGuardar"]);
+Route::get("/usuario/{id}", [UsuarioController::class, "funMostrar"]);
+Route::put("/usuario/{id}", [UsuarioController::class, "funModificar"]);
+Route::delete("/usuario/{id}", [UsuarioController::class, "funEliminar"]);
+
+});
+
 
