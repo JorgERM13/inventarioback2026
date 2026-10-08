@@ -42,11 +42,14 @@ class AlmacenController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
+    
     {
-    $almacen = Almacen:: find("$id");
+        $almacen = Almacen::with(["sucursal", "productos"])->find($id);
 
-    return response()->json("almacen,200");
+        return response()->json($almacen, 200);
     }
+
+    
 
     /**
      * Update the specified resource in storage.

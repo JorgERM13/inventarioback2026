@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SucursalController;
@@ -58,6 +59,9 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::apiResource("almacen", AlmacenController::class);
 
     Route::apiResource("producto", ProductoController::class);
+
+    //Crud notas
+    Route::apiResource("nota", NotaController::class);
 
 
 });

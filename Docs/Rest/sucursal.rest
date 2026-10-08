@@ -1,9 +1,9 @@
 GET http://127.0.0.1:8000/api/sucursal
-Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
 
 ### Guardar
 POST http://127.0.0.1:8000/api/sucursal
-Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+Authorization: Bearer 5|AsD8Rr8cvSCeuqpDYjx7GIWCsIWA2ONwqqbv8zuycda99b41
 Content-Type: application/json
 
 {

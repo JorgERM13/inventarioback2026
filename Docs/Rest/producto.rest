@@ -1,15 +1,21 @@
 ### Lista de productos con paginación
 GET http://127.0.0.1:8000/api/producto
-Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
 Accept: application/json 
 
 
 ### Guardar Producto 
 POST http://127.0.0.1:8000/api/producto 
-Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
 Accept: application/json 
 Content-Type: application/json
 
 {
-"nombre": "TV", "descripcion": "TV monitor", "unidad_medida": "CAJA", "marca": "ASUS", "precio_venta": 499.50, "estado": true, "categoria_id": 1
+"nombre": "TV", 
+"descripcion": "TV monitor", 
+"unidad_medida": "CAJA", 
+"marca": "ASUS", 
+"precio_venta": 499.50, 
+"estado": true, 
+"categoria_id": 1
 }

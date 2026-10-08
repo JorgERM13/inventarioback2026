@@ -1,0 +1,2 @@
+GET http://127.0.0.1:8000/api/nota
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239

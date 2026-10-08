@@ -1,0 +1,22 @@
+GET http://127.0.0.1:8000/api/almacen
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+
+
+
+### Guardar
+
+POST http://127.0.0.1:8000/api/almacen 
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+Content-Type: application/json 
+Accept: application/json
+
+{
+"nombre": "Almacen 1", 
+"codigo": "ALM-001", 
+"descripcion": "prueba", 
+"sucursal_id": 1
+}
+
+### Mostrar un almacen
+GET http://127.0.0.1:8000/api/almacen/1
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
