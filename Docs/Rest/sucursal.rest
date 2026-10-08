@@ -1,0 +1,14 @@
+GET http://127.0.0.1:8000/api/sucursal
+Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+
+### Guardar
+POST http://127.0.0.1:8000/api/sucursal
+Authorization: Bearer 3|DpGitSmHyW2EgUOxJYMRm4zSbWW1WSsrNRSq0Ie30372377b
+Content-Type: application/json
+
+{
+    "nombre": "Sucursal Central 2",
+    "direccion":  "Av.Aniceto Arve",
+    "telefono": "70707000",
+    "ciudad": "Cochabamba"
+}
