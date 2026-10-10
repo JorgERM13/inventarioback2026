@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("nro_identificacion",40)->nullable();
             $table->string("telefono", 20)->nullable();
             $table->string("direccion", 200)->nullable();
-            $table->string("correro", 250)->nullable();
+            $table->string("correo", 250)->nullable();
             $table->boolean("estado")->default(true);
 
             $table->timestamps();

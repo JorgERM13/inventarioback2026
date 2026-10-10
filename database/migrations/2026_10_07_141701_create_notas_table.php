@@ -20,7 +20,7 @@ return new class extends Migration
             $table->decimal("descuentos",12,2)->nullable();
             $table->decimal("total_calculado",12,2)->nullable();
             $table->string("estado_nota",50)->nullable();
-            $table->text("obaservaciones")->nullable();
+            $table->text("observaciones")->nullable();
 
 
             $table->bigInteger("cliente_id")->unsigned();

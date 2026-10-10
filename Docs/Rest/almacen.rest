@@ -1,5 +1,5 @@
 GET http://127.0.0.1:8000/api/almacen
-Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+Authorization: Bearer 11|KfjN0f9mptbbdkG2Z7trl1YAcOuNBLSnYfV6PAGl304debce
 
 
 

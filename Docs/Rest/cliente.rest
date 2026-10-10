@@ -1,0 +1,24 @@
+GET http://127.0.0.1:8000/api/cliente
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+
+### Guardar cliente
+POST  http://127.0.0.1:8000/api/cliente
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+Content-Type: application/json
+
+{
+    "tipo": "proveedor",
+    "razon_social": "Juancho SRL",
+    "nro_identificacion": "7070770", 
+    "telefono": "78787878",
+    "direccion": "Av. Obrajes",
+    "correo": "juancho@mail.com",
+    "estado": true
+
+
+}
+
+### Mostra
+GET http://127.0.0.1:8000/api/cliente/2
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+

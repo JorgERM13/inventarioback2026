@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\RoleController;
@@ -36,8 +37,11 @@ Route::prefix('/auth')->group(function(){
 });
 
 
-
 Route::middleware('auth:sanctum')->group(function(){
+
+    //reporte PDF
+    Route::get("/nota/reportespdf", [NotaController::class, "funReportePDF"]);
+
 
     // subida de imagen de producto
     Route::post("/producto/{id}/subir-imagen", [ProductoController::class, "actualizarImagen"]);
@@ -63,6 +67,7 @@ Route::middleware('auth:sanctum')->group(function(){
     //Crud notas
     Route::apiResource("nota", NotaController::class);
 
+    Route::apiResource("cliente", ClienteController::class);
 
 });
 

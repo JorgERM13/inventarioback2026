@@ -1,2 +1,69 @@
 GET http://127.0.0.1:8000/api/nota
+Authorization: 10|OSbXYCud1LLc9TGVkJl07FwdOmfCGETid7pdbisq59337f61
+
+### Crear nota
+POST http://127.0.0.1:8000/api/nota
 Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+Content-Type: application/json
+
+{
+    "tipo_nota": "compra",
+    "impuestos": "0",
+    "descuentos":"0",
+    "total_calculado":"0",
+    "estado_nota":"ninguna",
+    "observaciones":"ninguna",
+    "cliente_id":2,
+    "movimientos":[
+        {
+            "producto_id": 2,
+            "almacen_id":1,
+            "cantidad":5,
+            "tipo_movimiento":"ingreso",
+            "precio_unitario_compra":1200,
+            "precio_unitario_venta":1300,
+            "observaciones":"ninguna"
+        },
+        {
+            "producto_id": 3,
+            "almacen_id":1,
+            "cantidad":5,
+            "tipo_movimiento":"ingreso",
+            "precio_unitario_compra":1500,
+            "precio_unitario_venta":1700,
+            "observaciones":"ninguna"
+        }
+    ]
+}
+
+### venta
+
+POST http://127.0.0.1:8000/api/nota
+Authorization: Bearer 8|c3geEecF1IEJiBvRD2CJ33655AZr1WiLW4bpL6kt7bfd2239
+Content-Type: application/json
+
+{
+    "tipo_nota": "venta",
+    "impuestos": "0",
+    "descuentos":"0",
+    "total_calculado":"0",
+    "estado_nota":"ninguna",
+    "observaciones":"ninguna",
+    "cliente_id":1,
+    "movimientos":[
+        {
+            "producto_id": 2,
+            "almacen_id":1,
+            "cantidad":5,
+            "tipo_movimiento":"salida",
+            "precio_unitario_compra":1200,
+            "precio_unitario_venta":1300,
+            "observaciones":"ninguna"
+        }
+        
+    ]
+}
+
+### reporte PDF
+GET http://127.0.0.1:8000/api/nota/reportespdf
+Authorization: Bearer 11|KfjN0f9mptbbdkG2Z7trl1YAcOuNBLSnYfV6PAGl304debce

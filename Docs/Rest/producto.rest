@@ -11,11 +11,11 @@ Accept: application/json
 Content-Type: application/json
 
 {
-"nombre": "TV", 
-"descripcion": "TV monitor", 
+"nombre": "Parlante", 
+"descripcion": "Parlante gamer", 
 "unidad_medida": "CAJA", 
 "marca": "ASUS", 
-"precio_venta": 499.50, 
+"precio_venta": 500, 
 "estado": true, 
 "categoria_id": 1
 }
