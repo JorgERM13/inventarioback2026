@@ -12,9 +12,11 @@ class AlmacenController extends Controller
      */
     public function index()
     {
-        $almacenes = Almacen::get();
-
-        return response()->json($almacenes,200);
+        $sucursalID = isset($request->sucursal)?$request->sucursal:null;
+      
+        $almacenes = Almacen::where("sucursal_id", $sucursalID)->with('sucursal')->get();
+        
+        return response()->json($almacenes, 200);
     }
 
     /**
