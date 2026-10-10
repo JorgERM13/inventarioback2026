@@ -39,6 +39,9 @@ Route::prefix('/auth')->group(function(){
 
 Route::middleware('auth:sanctum')->group(function(){
 
+// reporte excel
+    Route::get('producto/export-excel', [ProductoController::class, 'exportarProductosExcel']);
+
     //reporte PDF
     Route::get("/nota/reportespdf", [NotaController::class, "funReportePDF"]);
 
